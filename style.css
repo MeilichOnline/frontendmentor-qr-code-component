@@ -1,0 +1,49 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: sl(218, 44%, 22%);
+
+    --fsize: 15px;
+}
+
+* {
+    margin: 0;
+}
+
+html,body {
+    font-size: var(--fsize);
+    background-color: var(--clr-light-gray);
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 339px;
+    display: grid;
+    gap: 1rem;
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.card__image {
+    display: block;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.card__title {
+
+}
+
+.card__description {
+    color: var(--clr-grayish-blue);
+}
