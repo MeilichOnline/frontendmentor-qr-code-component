@@ -3,21 +3,22 @@
     --clr-light-gray: hsl(212, 45%, 89%);
     --clr-grayish-blue: hsl(220, 15%, 55%);
     --clr-dark-blue: sl(218, 44%, 22%);
-
-    --fsize: 15px;
+    
+    --ffamily: 'Josefin Sans', sans-serif;
+    --fsize: 1em;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 html,body {
-    font-size: var(--fsize);
     background-color: var(--clr-light-gray);
     height: 100%;
 }
 
-.container {
+body {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -25,25 +26,35 @@ html,body {
     align-items: center;
 }
 
-.card {
-    width: 339px;
+article {
+    max-width:367px;
     display: grid;
     gap: 1rem;
     background-color: var(--clr-white);
-    border-radius: 1rem;
-    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 1.125rem;
+    padding: 1.125em;
 }
 
-.card__image {
+article > img {
     display: block;
     max-width: 100%;
-    border-radius: 1rem;
+    border-radius: .725rem;
 }
 
-.card__title {
-
+article > div {
+    margin: 1.125em 1.125em;
+    filter: blur(.5px);
+    font-size: var(--fsize);
+    font-family: var(--ffamily);
 }
 
-.card__description {
+article > div > h1 {
+    color: var(--clr-dark-blue);
+    margin-bottom: .725em;
+}
+
+article > div > p {
     color: var(--clr-grayish-blue);
+    font-weight:400;
+    margin-bottom: 1em;
 }
