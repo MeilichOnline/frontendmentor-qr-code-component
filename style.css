@@ -42,7 +42,7 @@ article > img {
 }
 
 article > div {
-    margin: 1.125em .5em;
+    margin: .725em .5em;
     filter: blur(.5px);
     font-size: var(--fsize);
     font-family: var(--ffamily);
