@@ -5,7 +5,7 @@
     --clr-dark-blue: sl(218, 44%, 22%);
     
     --ffamily: 'Josefin Sans', sans-serif;
-    --fsize: 1em;
+    --fsize: 15px;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 }
 
 article {
-    max-width:367px;
+    max-width:330px;
     display: grid;
     gap: 1rem;
     background-color: var(--clr-white);
@@ -42,7 +42,7 @@ article > img {
 }
 
 article > div {
-    margin: 1.125em 1.125em;
+    margin: 1.125em .5em;
     filter: blur(.5px);
     font-size: var(--fsize);
     font-family: var(--ffamily);
